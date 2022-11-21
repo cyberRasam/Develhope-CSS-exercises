@@ -1,0 +1,23 @@
+:root {
+    --bodyBackground : #011212;
+    --ballBackgound: #ff8800;
+    --dimension :100px;
+    --fiftyPercent : 50%;
+}
+
+
+body {
+    background-color: var(--bodyBackground);
+}
+
+
+
+.ball {
+    width: var(--dimension);
+    height: var(--dimension);
+    background-color: var(--ballBackgound);
+    border-radius: var(--fiftyPercent);
+}
+
+
+
