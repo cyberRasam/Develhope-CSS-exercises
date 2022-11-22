@@ -26,6 +26,7 @@ tbody tr:nth-child(even) {
 
 tfoot tr {
     font-weight: 800;
+    background-color: #78909c;
 }
 tbody td:nth-of-type(2) {
     color: #003300;
