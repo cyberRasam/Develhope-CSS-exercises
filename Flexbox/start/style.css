@@ -1,0 +1,50 @@
+:root {
+    --background: rgb(152, 188, 145);
+    --text-color: rgb(33, 33, 46);
+    --font-family: Manrope, arial;
+    --link-color: #2b2b2b;
+}
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar {
+    background-color: var(--background);
+    font-family: var(--font-family);
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    text-align: center;
+}
+
+
+nav > li {
+    list-style: none;
+    margin-bottom: 10px;
+    margin-left: 1rem;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+nav > li > a:hover {
+    color: #2b2bb2;
+    transition: 0.3s;
+}
+
+.user{
+    flex: 2;
+}
