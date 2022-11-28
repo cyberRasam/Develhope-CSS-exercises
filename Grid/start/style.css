@@ -1,0 +1,91 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  --result-color: rgb(57, 60, 65);
+  --arithmetic-color: rgb(201, 236, 252);
+  --equal-color: rgb(255, 116, 139);
+  --white-color: rgb(218, 232, 255);
+}
+/*main {
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}*/
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto auto;
+}
+
+.grid-container {
+  display: grid;
+  padding: 0.5rem;
+  background-color: wheat;
+  height: 400px;
+  width: 400px;
+  grid-template-rows: 0.8fr 1fr 4fr;
+  border-radius: 12px;
+  padding: 0;
+}
+
+.first-row {
+  background-color: var(--result-color);
+  color: var(--white-color);
+  text-align: right;
+  border-radius: 12px 12px 0 0;
+}
+
+.first-row p {
+  margin-right: 1rem;
+}
+
+.second-row {
+  background-color: var(--arithmetic-color);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.second-row span {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+.second-row span {
+  border-bottom: 1px solid var(--result-color);
+}
+
+.second-row span:not(:last-child) {
+  border-right: 1px solid var(--result-color);
+}
+
+.third-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.equal-sign {
+  grid-column: 4;
+  grid-row: 1/5;
+  background-color: var(--equal-color);
+  border-bottom-right-radius: 12px;
+}
+
+.row-number {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+.row-number:not(:last-child) {
+  border-right: 1px solid var(--result-color);
+}
+
+span[name='num-pad'] {
+  border-bottom: 1px solid var(--result-color);
+}
