@@ -1,0 +1,8 @@
+body {
+  display: flex;
+  height: 100vh;
+}
+
+section {
+  flex: 0.5 2 1;
+}

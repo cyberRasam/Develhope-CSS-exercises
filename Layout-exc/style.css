@@ -1,0 +1,50 @@
+main {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.id {
+  background-color: gray;
+  color: black;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cerca-input {
+  margin: 2rem;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+aside {
+  background-color: gray;
+  height: 100vh;
+}
+
+.box-side {
+  background-color: white;
+  height: 40px;
+  width: 80px;
+  margin: 2rem 0 0 2rem;
+}
+
+@media screen and (max-width) {
+}
