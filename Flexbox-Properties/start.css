@@ -1,8 +1,16 @@
 body {
   display: flex;
-  height: 100vh;
+  margin: 0 auto;
 }
 
 section {
   flex: 0.5 2 1;
+}
+
+body > section {
+  height: 85vh;
+}
+
+#orange {
+  flex-grow: 2;
 }
