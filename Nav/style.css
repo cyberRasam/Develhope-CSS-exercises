@@ -1,102 +1,103 @@
-:root{
-    --color: antiquewhite;
+:root {
+  --color: antiquewhite;
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-    margin: 0;
+header {
+  margin: 0;
 }
 
 .hamburger {
-    display: none;
+  display: none;
 }
 
 nav {
-    background-color: rgb(38, 40, 45); 
-    padding: 0 1rem;
-    height:45px;
-    box-sizing:border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-width: 100%; 
-    position: fixed;
-    top:0;
-    left: 0;
+  background-color: rgb(38, 40, 45);
+  padding: 0 1rem;
+  height: 45px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-span{
-    color: white; 
-    margin-right: 1rem;
-    font-weight: 500;
-    font-size: 24px;
+span {
+  color: white;
+  margin-right: 1rem;
+  font-weight: 500;
+  font-size: 24px;
 }
 
 a {
-    text-decoration: none;
-    color: var(--color);
-    margin-right: 0.5rem;
+  text-decoration: none;
+  color: var(--color);
+  margin-right: 0.5rem;
 }
 
-
-
 select {
-    background: transparent;
-    color: var(--color);
-    border: none;
+  background: transparent;
+  color: var(--color);
+  border: none;
 }
 
 option {
-    color:seagreen;
+  color: seagreen;
 }
 
 button {
-    background: transparent;
-    color: rgb(140, 140, 140);
-    border: none;
-    padding: 5px;
+  background: transparent;
+  color: rgb(140, 140, 140);
+  border: none;
+  padding: 5px;
 }
 
-.searchBar{
-    display: inline;
+.searchBar {
+  display: inline;
 }
 
-input{
-    border-radius: 2px;
-    border: none;
-    height: 20px;
-    padding: 5px;
+input {
+  border-radius: 2px;
+  border: none;
+  height: 20px;
+  padding: 5px;
 }
 
 .search {
-    color: green;
-    font-weight: lighter;
-    border: 1px solid green; 
-    padding: 5px 8px;
-    margin-left: 4px;
-    border-radius: 3px;
-    letter-spacing: 0.5px;
+  color: green;
+  font-weight: lighter;
+  border: 1px solid green;
+  padding: 5px 8px;
+  margin-left: 4px;
+  border-radius: 3px;
+  letter-spacing: 0.5px;
 }
 
 .search:hover {
-    color: white;
-    background-color: green;
+  color: white;
+  background-color: green;
 }
 
 @media screen and (max-width: 768px) {
-    nav a, nav select, nav button, nav input {
-        display: none;
-    }
-    .hamburger{
-       display: inline;
-    }
-    .hamburger img{
-        width: 35px;
-        height:35px;
-        margin-top: 5px;
-        padding: 10;
-    }
+  nav a,
+  nav select,
+  nav button,
+  nav input {
+    display: none;
+  }
+  .hamburger {
+    display: inline;
+  }
+  .hamburger img {
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+    padding: 10px;
+  }
 }
